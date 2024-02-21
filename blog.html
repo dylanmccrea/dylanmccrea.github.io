@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            background-color: #333; 
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: calc(61.8% - 40px); 
+        }
+
+
+        .main-content > * {
+            padding: 10px;
+        }
+
+        .blog-container {
+            display: grid;
+            grid-template-columns: 1fr 1.618fr; 
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .blog-post {
+            background-color: #444;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        @keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 3.5s;
+}
+        .blog-post:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="social.html">Social</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div class="blog-container">
+            <div class="blog-post slide-in-left">
+                <h2>Please Help</h2>
+                <p>I am tired</p>
+                <ul>
+                    <li>Test</li>
+                    <li>Test</li>
+                    <li>Project</li>
+                </ul>
+            </div>
+            <div class="blog-post">
+                <h2>Remotes</h2>
+                <p>you always lose them.</p>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <footer>
+    </footer>
+</body>
+</html>
