@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conclusion</title>
+    <style>
+         body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+    }
+        input[type="text"] {
+            width: 80%;
+            height: 200px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+        input[type=submit],
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1>Your Quest Has Concluded</h1>
+        <h2>For now...</h2>
+        <p id="conclusion">Based on your choices, [Insert a dynamic conclusion based on the user's journey and final decision].</p>
+        <p>We hope you enjoyed your adventure. Would you like to provide feedback on your experience?</p>
+        
+        <form id="feedbackForm" type="get" action="feedback.html">
+            <label for="feedback">Your Feedback:</label>
+            <input id="feedback" type="text" name="feedback" style = "width:400px; height:80px" placeholder = "Enter your feedback here...">
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </section>
+    <p></p>
+    <button onclick="location.href='page1.html'">Play Again</button>
+    <p>Thank you, Gray, for everything you do. I hope you enjoyed this journey. I love you, and I hope you had fun on this adventure and the many more we're sure to go on. Thank you as well, Mom, for everything you do in my life. I'm proud to be your son. Truly, thank you both.</p>
+    <script>
+       // function updateConclusion(character, items, decision) {
+     //       let conclusion = "";
+     //       if (character === "Aria" && items.includes("Sword") && decision === "fight") {
+     //           conclusion = "Aria, the warrior, you are strong and know when to fight. You have defeated Malakar. The kingdom will remeber your deeds for generations to come.";
+     //       } else if (character === "Eldrin" && items.includes("Food") && items.includes("Magic Potions") && decision === "befriend") {
+       //         conclusion = "Eldrin, the mage, you are wise and know there is always an easier option. You have helped Malakar understand the error of his ways. The kingdom will remeber your deeds for generations to come.";
+      //      } else if (character === "Tara" && items.includes("Water") && items.includes("Maps") && decision === "run") {
+      //          conclusion = "Tara, the rogue, you are tactical and know when to retreat. You may not have defeated him today, but with the intel you gathered, Malakar will be brought to justice soon. The kingdom will remeber your deeds for generations to come.";
+      ///      } else {
+        //       conclusion = "Your journey was challenging, and the fate of the kingdom rests on your shoulders. Choose wisely.";
+      //      }
+    //        document.getElementById("conclusion").innerText = conclusion;
+    //    }
+
+        
+        function submitFeedback() {
+            const feedback = document.getElementById("feedback").value;
+           
+            console.log("Feedback submitted:", feedback);
+        }
+
+        function playAgain() {
+            console.log("Play again button clicked");
+        }
+
+    </script>
+</body>
+</html>

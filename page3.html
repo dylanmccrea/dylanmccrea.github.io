@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Quest Begins</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        }
+        .supplies {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: left;
+        }
+        /* label {
+            display: block;
+            margin: 5px;
+        } */
+        
+        select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 5px;
+        }
+        .character {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            cursor: pointer;
+        }
+        input[type=submit],
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .stealth-option {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            border: 2px solid #ddd;
+            text-align: center;
+        }
+        .stealth-option:hover {
+            background-color: #e8e8e8;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1>Pack Your Bag</h1>
+        <p>Select the supplies you wish to take on your quest. Choose wisely, as you can only carry a limited amount.</p>
+
+        <form id="supplyForm" action="page4.html" method="get">
+            <fieldset>
+                <legend>Choose Your Provisions</legend>
+                <div class="supplies">
+                    <input type="checkbox" id="food" name="food" value="Food">
+                    <label for="food">Food: Essential for energy.</label><br>
+                </div>
+                <div class="supplies">
+                    <input type="checkbox" id="water" name="water" value="Water">
+                    <label for="water">Water: Hydration is key!</label><br>
+                </div>
+                <div class="supplies">
+                    <input type="checkbox" id="potions" name="potions" value="Magic Potions">
+                    <label for="potions">Magic Potions: For health and magical energy.</label><br>
+                </div>
+                <div class="supplies">
+                    <input type="checkbox" id="maps" name="maps" value="Maps">
+                    <label for="maps">Maps: Don't get lost in the wilderness!</label><br>
+                </div>
+                <div class="supplies">
+                    <input type="checkbox" id="sword" name="sword" value="Sword">
+                    <label for="sword">Sword: Fend off those pesky foes!</label><br>
+                </div>
+            </fieldset>
+            <input type="submit" value="Continue">
+        </form>
+        
+        <p>Once you've chosen your gear, hit the 'Continue' button. But beware, every choice has consequences!</p>
+    </section>
+</body>
+</html>

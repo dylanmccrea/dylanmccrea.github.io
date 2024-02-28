@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Final Showdown</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .supplies {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: left;
+        }
+        select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1>The Final Showdown</h1>
+        <p>After a long journey filled with trials and challenges, you finally stand before Malakar's lair. The dark sorcerer awaits, the Crystal of Wisdom in his grasp. It's time to make your move.</p>
+        
+        <p>How will you confront Malakar?</p>
+        <form action="page7.html" method="post">
+            <label for="action">Choose wisely:</label>
+            <select id="action" name="action">
+                <option value="" selected>-- Please choose your option --</option>
+                <option value="run">Run</option>
+                <option value="fight">Fight</option>
+                <option value="befriend">Befriend</option>
+            </select>
+            <br>
+
+            <fieldset>
+                <legend>Character Information</legend>
+                    <fieldset>
+                        <legend>The Brave</legend>
+                        <label for="yourName">Your Name:</label>
+                        <input id="yourName" type="text" name="yourName">
+                    </fieldset>
+    
+                    <br>
+    
+                    <fieldset>
+                        <legend>Select Your Weapon:</legend>
+    
+                        <input type="radio" id="sword" name="Sword" value="weapon">
+                        <label for="sword">Sword</label>
+    
+                        <input type="radio" id="bow" name="Bow" value="weapon">
+                        <label for="bow">Bow</label>
+    
+                        <input type="radio" id="staff" name="Staff" value="weapon">
+                        <label for="staff">Staff</label>
+                    </fieldset>
+    
+                    <br>
+    
+                    <fieldset>
+                        <legend>Select Your Armor:</legend>
+    
+                        <input type="checkbox" id="plateArmor" name="PlateArmor" value="armor">
+                        <label for="plateArmor">Plate Armor</label>
+    
+    
+                        <input type="checkbox" id="leatherArmor" name="LeatherArmor" value="armor">
+                        <label for="leatherArmor">Leather Armor</label>
+                       
+    
+                        <input type="checkbox" id="cloak" name="Cloak" value="armor">
+                        <label for="cloak">Cloak</label>
+                    </fieldset>
+    
+                    <br>
+                    
+                    <label for="malMessage">Leave a Message for Malakar:</label>
+                    <br>
+                    <input id="malMessage" type="text" name="yourName" style = "width:500px; height:50px">
+            </fieldset>
+        </section>
+        
+            <input type="submit" value="Face Malakar">
+    
+        </form>
+    
+            <p>Your choice here will determine the fate of the kingdom. Choose wisely.</p>
+        
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The First Obstacle</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1>The First Obstacle</h1>
+        <p>As you venture deeper into the Dark Forest, you encounter a mystical guardian. The guardian blocks your path and poses a riddle:</p>
+        
+        <blockquote>
+            <p>"I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?"</p>
+        </blockquote>
+
+        <form id="formSetup" action="page5.html" method="get">
+            <label for="riddleAnswer">Your Answer:</label>
+            <input type="text" id="riddleAnswer" name="riddleAnswer" placeholder="Enter your answer...">
+            
+            <input type="submit" id="submitButton" class="button" value="Submit Answer">
+        </form>
+    </section>
+
+    <script>
+        // Step 1
+        const answerInput = document.getElementById('riddleAnswer');
+        const submitButton = document.getElementById('submitButton');
+
+    
+        function checkAnswer(correctAnswer, userAnswer) {
+            if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+                submitButton.classList.remove('red');
+                submitButton.classList.add('green');
+                submitButton.disabled = false; 
+            } else {
+                submitButton.classList.remove('green');
+                submitButton.classList.add('red');
+                submitButton.disabled = true; 
+            }
+        }
+
+        // Step 3
+        answerInput.addEventListener('input', function() {
+            checkAnswer("echo", answerInput.value);
+        });
+    </script>
+</body>
+</html>
