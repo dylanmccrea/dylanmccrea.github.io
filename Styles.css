@@ -1,0 +1,22 @@
+/* Basic */
+article {
+  background-color: #FFECB3;
+  font-size: 16px;
+  color: #333;
+}
+/* Class-based */
+article.featured {
+  background-color: #FFD54F;
+  font-weight: bold;
+  border: 2px solid #FFA000;
+}
+/* Nested */
+article p {
+  line-height: 1.5;
+  font-style: italic;
+}
+/* Hover Effect */
+article.featured:hover {
+  background-color: #FFB300;
+}
+
